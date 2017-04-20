@@ -80,8 +80,7 @@ for x in baselist:
 							break
 		marked = False
 		wordlist = []
-		i += 1 #tracks the position in the list
-
+	i += 1 #tracks the position in the list
 #this is how to turn a list back into a string for printing
 str1 = ''.join(newlist)
 print(str1)
