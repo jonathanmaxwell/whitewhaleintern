@@ -1,23 +1,17 @@
-import fileinput
 import random
 import sys
 
 for line in sys.stdin:
 	baseinput = line
 
-#line= input()
-#baselist = []
-#for c in line:
-#	baselist.append(c)
 #this is a list of every character
 baselist = list(baseinput)
 newlist = baselist
 wordlist = []
 i = 0
-#Becomes True to denote a word has been found; keeps track of the word length)
-marked = False
-first = 0
-last = 0
+marked = False #Becomes True to denote a word has been found; keeps track of the word length)
+first = 0 #Will be used to track to first letter of a word
+last = 0 #Will be used to track to last letter of a word
 
 #creates a seperate list comprised of the middle characters of the word
 def getword(wordlist, i, first, last):
@@ -86,8 +80,8 @@ for x in baselist:
 							break
 		marked = False
 		wordlist = []
-	#tracks the position in the list
-	i += 1
+		i += 1 #tracks the position in the list
+
 #this is how to turn a list back into a string for printing
 str1 = ''.join(newlist)
 print(str1)
