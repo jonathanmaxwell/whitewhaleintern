@@ -53,7 +53,7 @@ For completion by applicant
 Quick Start
 -----------
 
-* The program can be run using the commandline. Use "python gibgen.py < textfile.txt" without the quotes, where textfile.txt is the name of whichever textfile you want to give the program
+* The program can be run using the commandline. Use "python gibgen.py < textfile.txt" without the quotes, where textfile.txt is the name of whichever textfile you want to give the program. It is designed to handle to the specific input given with this challenge, but can handle any text file with a single line of text.
 * Python 3 was used to write this program
 * The code has comments to explain its use. No additional information is required to run the program.
 
