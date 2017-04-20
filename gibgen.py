@@ -1,10 +1,14 @@
-# File: hello.py
 import fileinput
 import random
+import sys
 
-for line in fileinput.input():
+for line in sys.stdin:
 	baseinput = line
 
+#line= input()
+#baselist = []
+#for c in line:
+#	baselist.append(c)
 #this is a list of every character
 baselist = list(baseinput)
 newlist = baselist
@@ -62,7 +66,7 @@ for x in baselist:
 			newlist[first+2] = wordlist[0]
 		#If the word is longer than 4 letters, randomly switch the letters inbetween
 		elif wordlength(first, last) > 4:
-			#checks to see if the word is unscrambled. If after scrambling the letters are back where they started, it will try again
+			#checks to see if the word is unscrambled. If the letters are back where they startedafter scrambling , it will try again
 			while isSame(wordlist, newlist, first) == True:
 				j = first+1
 				k = 0
@@ -84,14 +88,6 @@ for x in baselist:
 		wordlist = []
 	#tracks the position in the list
 	i += 1
-
-
-
-
-#basearray[j].islower() can help with the ABBRV, function
-
 #this is how to turn a list back into a string for printing
 str1 = ''.join(newlist)
-print(str1)
-str1 = ''.join(wordlist)
 print(str1)
